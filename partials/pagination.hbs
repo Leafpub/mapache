@@ -1,11 +1,14 @@
-{{! -- Add Pagination -- }}
-
-<nav class="pagination-nav clear" role="navigation">
-    {{#if prev}}
-        <a class="newer-posts btn btn-primary" href="{{page_url prev}}"><i class="i-back"></i> Newer Posts</a>
-    {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
-    {{#if next}}
-        <a class="older-posts btn btn-primary" href="{{page_url next}}">Older Posts <i class="i-forward"></i></a>
-    {{/if}}
-</nav>
+{{!-- Pagination --}}
+{{#is pagination.total_pages '>' 1}}
+    {{#pagination}}
+        <nav class="pagination-nav clear" role="navigation">
+            {{#if previous_page_url}}           
+                <a class="newer-posts btn btn-primary" href="{{previous_page_url}}"><i class="i-back"></i>{{L 'Newer Posts'}}</a>
+            {{/if}}
+            <span class="page-number">Page {{number current_page}} of {{number total_pages}}</span>
+            {{#if next_page_url}}
+            	<a class="older-posts btn btn-primary" href="{{next_page_url}}">{{L 'Older Posts'}}' <i class="i-forward"></i></a>         
+            {{/if}}       
+        </nav>
+    {{/pagination}}
+{{/is}}

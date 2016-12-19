@@ -1,24 +1,49 @@
-{{!-- Header section --}}
-<header id="header" class="header {{^is "home, tag, author"}} toolbar-shadow"{{else}}" style="background:transparent"{{/is}}>
-	<section class="header-wrap u-flex-wrap u-flex-center">
+<!DOCTYPE html>
+<head>
+	{{!-- Document Settings --}}
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+	{{!-- Page Meta --}}
+	<title>{{@meta.title}}</title>
+	<meta name="description" content="{{@meta.description}}" />
+
+	{{!-- Mobile Meta --}}
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	{{!-- Brand icon --}}
+	<link rel="shortcut icon" href="{{#is @settings.favicon}}{{url @settings.favicon}} {{else}} {{theme_url 'img/icon.png'}} {{/is}}" />
+	<link rel="icon" sizes="192x192" href="{{theme_url 'assets/img/icon.png'}}" />
+
+	{{!-- Styles'n'Scripts --}}
+	<link rel="stylesheet" type="text/css" href="{{theme_url 'assets/css/main.css'}}" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500" rel="stylesheet">
+
+	{{leafpub_head}}
+</head>
+<body class=" {{body_class}}" avalanche-page-url="{{url}}">
+{{!-- Header section --}}
+<header id="header" class="header {{#is slug}} toolbar-shadow"{{else}}" style="background:transparent"{{/is}}>
+	<section class="header-wrap u-flex-wrap u-flex-center">
 		{{!-- Header Logo --}}
-		<a class="header-logo" href="{{@blog.url}}">
-			{{#if @blog.logo}}
-				<img src="{{@blog.logo}}" alt="{{@blog.title}}"/>
-				<span class="header-logo-bg" style="display:none;background-image:url({{@blog.logo}})"></span>
+		<a class="header-logo" href="{{url}}">
+			{{#if @settings.logo}}
+				<img src="{{url @settings.logo}}" alt="{{@settings.title}}"/>
+				<span class="header-logo-bg" style="display:none;background-image:url({{url @settings.logo}})"></span>
 			{{else}}
-				{{@blog.title}}
+				{{@settings.title}}
 			{{/if}}
 		</a>
 
 		{{!-- Header Navigation --}}
-		<nav class="header-menu u-flex">{{navigation}}</nav>
+		<nav class="header-menu u-flex">{{> navigation}}</nav>
 
 		{{!-- Header search section --}}
-		<form id="header-search" class="header-search u-flex" >
+		<form id="header-search" class="header-search u-flex" action="{{search_url}}" method="GET">
 			<div id="searchbox" class="searchbox">
-				<input id="searchbox-input" placeholder="Search" type="text" class="search-field" name="q" value="" autocomplete="off">
+				<input id="searchbox-input" placeholder="Search" type="text" class="search-field" name="s" value="" autocomplete="off">
 				<span class="search-icon i-search"></span>
 			</div>
 
@@ -29,8 +54,8 @@
 
 		{{!-- Header follow section --}}
 		<aside class="header-follow u-flex u-h-b-lg social_box">
-			{{#if @blog.facebook}} <a title="Facebook {{@blog.facebook}}" href="{{facebook_url}}" target="_blank" class="i-facebook"></a>{{/if}}
-			{{#if @blog.twitter}} <a title="Twitter {{@blog.twitter}}" href="{{twitter_url}}" target="_blank" class="i-twitter"></a>{{/if}}
+			{{#if @settings.facebook}} <a title="Facebook {{@settings.facebook}}" href="{{@settings.facebook}}" target="_blank" class="i-facebook"></a>{{/if}}
+			{{#if @settings.twitter}} <a title="Twitter {{@settings.twitter}}" href="https://twitter.com/{{@settings.twitter}}" target="_blank" class="i-twitter"></a>{{/if}}
 		</aside>
 
 		{{!-- Search - menu open and  close for mobile --}}
@@ -38,7 +63,6 @@
 		<a id="nav-mob-toggle" class="nav-mob-toggle btn btn-lg btn-flat u-h-a-lg" href="#"><span></span><span></span><span></span></a>
 
 	</section>
-
+	
 	{{> nav-mob}}
-
 </header>
