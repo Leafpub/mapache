@@ -1,20 +1,13 @@
-# Mapache for [Ghost](https://github.com/tryghost/ghost/) by GodoFredo
+# Mapache for [Leafpub](https://github.com/Leafpub/leafpub/) by GodoFredo ported by Marc
 
-[![Ghost version](https://img.shields.io/badge/Ghost-0.11.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
-[![Node version](https://img.shields.io/node/v/uno-zen.svg?style=flat-square)](https://nodejs.org/en/)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](http://bit.ly/DonateMapacheGhost)
+> Minimalist Material Design and Elegant theme for [Leafpub](https://github.com/Leafpub/leafpub/).
 
-> Minimalist Material Design and Elegant theme for [Ghost](https://github.com/tryghost/ghost/).
+### Free theme for Leafpub
 
-### Free theme for Ghost
-
-Hello, I created this theme Ghost to see how it works. It is available for free so you can use on your site. It is strictly forbidden commercial use. If you have any suggestions to improve the theme,  you can send me tweet to [@GodoFredoNinja](http://bit.ly/tw-GodoFredoNinja)
+Forked from [](https://github.com/godofredoninja/Mapache) and ported for Leafpub.
 
 ![](./documentation/mapache-screenshot.png)
 
-
-## Demo
-You can see a demo in my [blog](http://bit.ly/GodoFredoNinja-blog).
 
 ## Mapache Support for Web Browsers
 Mapache supports the following web [browsers](http://caniuse.com/#search=flexbox)
@@ -37,7 +30,6 @@ Mapache supports the following web [browsers](http://caniuse.com/#search=flexbox
 - Buttons to share the article
 - Counter shared articles on Facebook
 - YouTube, Vimeo, kickstarter -> Video Responsive
-- Code syntax [Prismjs](http://prismjs.com/index.html) Supported all syntax.
 
 
 ### Replace Favorite icon
@@ -45,9 +37,6 @@ Create an image icon with these dimensions with the name icon.png `155px * 155px
 
 
 ## Mapache settings
-- Enable **all** checkboxes on the labs page in your Ghost admin panel.
-
-![](./documentation/img-api.png)
 
 - Copy the below script to Settings -> Code Injection  -> Blog Footer section.
 
@@ -110,7 +99,7 @@ To use facebook comments, skip the configuration Disqus.
 
 This enables comments and comment counter
 
-1. Add the code in Settings -> Code Injection -> Blog Header
+1. Add the code in Settings -> Advanced -> Leafpub Header
 
 ```html
 <style>
@@ -122,7 +111,7 @@ This enables comments and comment counter
 	}
 </style>
 ```
-2. Add the code Settings -> Code Injection -> Blog Footer
+2. Add the code Settings -> Advanced -> Leafpub Footer
 
 ```html
 	<div id="fb-root"></div>
@@ -228,14 +217,6 @@ Add some more styling options to your articles text with these three styles.
 ```
 ![](./documentation/note.png)
 
-
-### PrismJS code syntax  
-
-Make your code stand out. WIth the PrismJS code highlighter. PrismJS allows you to select which languge you embeded and performs code highlighting according to the language. Neat!
-
-Take a look at the [Prismjs Supported Language List](http://prismjs.com/#languages-list)
-
-![](./documentation/code.png) to find your coding language.
 
 ## Video Post Format
 If you want to have a video post format, you only have to add the tag `#video-post-format` . The first video in the article will be large in size.
