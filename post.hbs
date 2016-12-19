@@ -5,9 +5,8 @@
 <section class="container">
 	<div class="post-wrapper">
 		<div class="row">
-
 			{{!-- Video Post format  --}}
-			{{#is tag "#video-post-format"}}
+			{{#is "video-post-format" 'in' tags}}
 				<div id="video-format" class="col s12 video-wrap">
 					<aside class="video-responsive video-featured"></aside>
 					<div class="video-content u-h-b-md" style="display:none">
@@ -18,10 +17,10 @@
 			{{/is}}
 
 			{{!-- Image Post Format  --}}
-			{{#is tag "#image-post-format"}}
+			{{#is "image-post-format" 'in' tags}}
 				{{#if image}}
 					<figure class="col s12 post-image">
-						<img src="{{image}}" alt="{{title}}"/>
+						<img src="{{url image}}" alt="{{title}}"/>
 					</figure>
 				{{/if}}
 			{{/is}}

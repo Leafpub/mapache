@@ -38,7 +38,7 @@ Create an image icon with these dimensions with the name icon.png `155px * 155px
 
 ## Mapache settings
 
-- Copy the below script to Settings -> Code Injection  -> Blog Footer section.
+- Copy the below script to Settings -> Advanced -> Leafpub Footer section.
 
 ### Social Links
 Add the Social Links only for the services you want to appear in the header section of your website. Pay attention as enabling too many services will cause menu problems.
@@ -87,7 +87,7 @@ var disqus_shortname = 'YOUR_DISQUS_SHORTCUT_HERE';
 This seciton will cover how to cover Disqus of Facebook commenting into the theme. Only enable either Disqus or Facebook comments.
 
 ### Disqus Comments
-To enable Disqus comments update the code in Settings -> Code Injection -> Blog Footer.
+To enable Disqus comments update the code in Settings -> Advanced -> Leafpub Footer.
 
 Insert your [Disqus shortname](https://shortname.disqus.com/admin/) in both the comments and Disqus comment count sections.
 
@@ -130,7 +130,7 @@ This enables comments and comment counter
 
 
 ## Change Theme Style
-To change the color of the Mapache theme select one of the theme styles below and copy it into the Setting -> Code Injection -> Blog Header
+To change the color of the Mapache theme select one of the theme styles below and copy it into the Setting -> Advanced -> Leafpub Header
 
 ```html
 <!-- Theme indigo -->
@@ -219,14 +219,14 @@ Add some more styling options to your articles text with these three styles.
 
 
 ## Video Post Format
-If you want to have a video post format, you only have to add the tag `#video-post-format` . The first video in the article will be large in size.
+If you want to have a video post format, you only have to add the tag `video-post-format` . The first video in the article will be large in size.
 
 ![](./documentation/video-format.png)
 
 ![](./documentation/video.png)
 
 ## Image Post Format
-If you want to have a image post format, you only have to add the tag `#image-post-format` The Featured image will become large in size
+If you want to have a image post format, you only have to add the tag `image-post-format` The Featured image will become large in size
 
 
 ### Credits
