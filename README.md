@@ -219,8 +219,6 @@ Add some more styling options to your articles text with these three styles.
 ## Video Post Format
 If you want to have a video post format, you only have to add the tag `video-post-format` . The first video in the article will be large in size.
 
-![](./documentation/video-format.png)
-
 ![](./documentation/video.png)
 
 ## Image Post Format
