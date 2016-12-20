@@ -4,7 +4,7 @@
 
 ### Free theme for Leafpub
 
-Forked from [](https://github.com/godofredoninja/Mapache) and ported for Leafpub.
+Forked from [Mapache](https://github.com/godofredoninja/Mapache) and ported for Leafpub.
 
 ![](./documentation/mapache-screenshot.png)
 
