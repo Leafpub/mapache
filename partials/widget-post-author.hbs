@@ -2,12 +2,12 @@
 {{#author}}
 
 <footer class="post-author">
-	<a class="post-author-avatar" href="{{url}}" style="background-image:url({{#if avatar}}{{url avatar}}{{else}}{{theme_url "assets/img/user-image.png"}}{{/if}})"></a>
+	<a class="post-author-avatar" href="{{author_url}}" style="background-image:url({{#if avatar}}{{url avatar}}{{else}}{{theme_url "assets/img/user-image.png"}}{{/if}})"></a>
 	<div class="post-author-wrap">
 		{{#if bio}}
-			<p class="post-author-bio"><strong><a href="{{url}}">{{name}}</a> — </strong>{{bio}}</p>
+			<p class="post-author-bio"><strong><a href="{{author_url}}">{{name}}</a> — </strong>{{bio}}</p>
 		{{else}}
-			<p class="post-author-bio">Read <a href="{{url}}">more posts</a> by this author.</p>
+			<p class="post-author-bio">Read <a href="{{author_url}}">more posts</a> by this author.</p>
 		{{/if}}
 
 		<ul class="u-unstyled u-flex u-h-b-lg">
