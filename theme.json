@@ -1,0 +1,12 @@
+{
+    "name": "Mapache",
+    "description": "Fork from Mapache theme for ghost by @GodoFredoNinja",
+    "version": "1.0.0",
+    "requires": "1.0.0",
+    "author": "Marc Apfelbaum",
+    "license": "GPLv3",
+    "url": "https://www.leafpub.org/",
+    "error_templates": {
+        "503":"partials/maintenance.hbs"
+    }
+}

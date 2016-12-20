@@ -1,13 +1,26 @@
 {{!-- Add Layout --}}
-{{!< default}}
 {{#post}}
+{{> header}}
 <div class="container">
-    <section class="post-wrapper">
-        <article class="post" style="max-width:700px;margin:0 auto;min-height: 100vh;">
-            <h1 class="post-title">{{title}}</h1>
-            {{#if image}}<figure class="post-image"><img src="{{image}}" alt="{{title}}" class="img-responsive"/></figure>{{/if}}
-            <div class="post-body">{{content}}</div>
-        </article>
-    </section>
+	<section class="post-wrapper">
+		<div class="row">
+			<div class="col s12 content">
+				<article class="post">
+					<div class="post-header">
+						<h1 class="post-title">
+							{{title editable="true"}}
+						</h1>
+						{{#if image}}<figure class="post-image"><img src="{{url image}}" alt="{{title}}" class="img-responsive"/></figure>{{/if}}
+					</div>
+					<div class="post-body">
+						{{content editable="true"}}
+					</div>
+				</article>
+			</div>
+			{{>sidebar}}
+		</div>
+	</section>
 </div>
+
+{{> footer}}
 {{/post}}
