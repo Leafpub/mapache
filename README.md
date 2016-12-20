@@ -227,8 +227,6 @@ If you want to have a image post format, you only have to add the tag `image-pos
 
 ### Credits
 - [Normalize](https://necolas.github.io/normalize.css/)
-- [Jquery.ghostHunter](https://github.com/jamalneufeld/ghostHunter)
-- [Prismjs](http://prismjs.com/)
 
 ## Copyright & License
 
