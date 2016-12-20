@@ -16,8 +16,6 @@ Mapache supports the following web [browsers](http://caniuse.com/#search=flexbox
 - Responsive layout
 - Blog navigation
 - Page 404
-- Page subscribe
-- Pagination Infinite Scroll
 - Cover images for blog, tag and author
 - links to followers in social media
 - Related Articles (6 articles)
@@ -52,7 +50,7 @@ This section enables the YouTube Post format. Add the Channel Name and Channel I
 ``` html
 <script>
 /* links to followers in social media */
-var social_link = {
+var followSocialMedia = {
 	'google': 'https://...',
 	'youtube': 'https://...',
 	'instagram': 'https://...',
