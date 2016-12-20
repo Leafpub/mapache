@@ -1,15 +1,15 @@
 {{!-- Sidebar right --}}
 <div id="sidebar" class="col s12 sidebar u-h-b-lg">
 	{{!-- 5 articles featured in page (home - author - tag) --}}
-	{{#is slug 'blog'}}
-		{{#posts filter="featured:true" items_per_page="5"}}
+	{{#is @template 'blog'}}
+		{{#posts featured="true" items_per_page="5"}}
 			{{> widget-entry-sidebar widgetTitle="Featured Posts" widgetPosts=posts}}
 		{{/posts}}
 	{{/is}}
 
 	{{!-- 5 articles recents in page (post) --}}
-	{{#is 'page'}}
-		{{#recent_posts limit="5"}}
+	{{#is @template 'in' 'page, post'}}
+		{{#recent_posts items_per_page="5"}}
 			{{> widget-entry-sidebar widgetTitle="Latest" widgetPosts=posts}}
 		{{/recent_posts}}
 	{{/is}}
