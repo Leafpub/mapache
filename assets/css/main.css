@@ -2242,3 +2242,33 @@ input.search-field{
     opacity:0;
     -webkit-transform:translateY(10px);
             transform:translateY(10px); } }
+
+.align-left{
+  text-align:left; }
+
+.align-center{
+  text-align:center; }
+
+.align-right{
+  text-align:right; }
+
+.align-justify{
+  text-align:justify; }
+
+[data-embed].align-left,img.align-left{
+  float:left;
+  margin-right:1em; }
+
+[data-embed].align-center,img.align-center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto; }
+
+[data-embed].align-right,img.align-right{
+  float:right;
+  margin-left:1em; }
+body .cover [data-leafpub-id="post:title"]:hover{
+  outline-color:hsla(0,0%,100%,.5); }
+
+body .cover [data-leafpub-id="post:title"]:focus{
+  outline-color:#fff; }
