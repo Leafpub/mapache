@@ -1,0 +1,46 @@
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+img.align-left,
+[data-embed].align-left {
+    float: left;
+    margin-right: 1em;
+}
+
+img.align-center,
+[data-embed].align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.align-right,
+[data-embed].align-right {
+    float: right;
+    margin-left: 1em;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+// Editor guidelines (overrides)
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body .cover [data-leafpub-id="post:title"]:hover {
+    outline-color: rgba(255, 255, 255, .5);
+}
+
+body .cover [data-leafpub-id="post:title"]:focus {
+    outline-color: white;
+}
