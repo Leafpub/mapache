@@ -1565,12 +1565,11 @@ input.search-field{
 .entry{
   margin-bottom:1.5rem;
   padding-bottom:0; }
-  .entry-image{
+    .entry-image,.entry-image--link{
     margin-bottom:10px; }
     .entry-image--link{
       line-height:0;
       display:block;
-      margin:0;
       overflow:hidden;
       position:relative; }
       .entry-image--link:hover .entry-image--bg{
