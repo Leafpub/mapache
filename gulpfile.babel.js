@@ -43,7 +43,7 @@ gulp.task('sass-compress', () => {
   gulp.src('./src/sass/main.scss')
   .pipe(sass({
     errLogToConsole: true,
-    outputStyle: 'compressed',
+    //outputStyle: 'compressed',
   }).on('error', sass.logError))
   .pipe(postCss(postCssPlugins))
   .pipe(gulp.dest('./assets/css/'));
