@@ -25,13 +25,13 @@
 					<span>Comments</span>
 				</a>
 				{{#author}}— by <strong><a class="entry-author" href="{{author_url}}">{{name}}</a></strong> —{{/author}}
-				<time class="entry-timeago timestamp" datetime="{{date format='%B %e, %Y'}}">{{date format='%B %e, %Y'}}</time>
+				<time class="entry-timeago timestamp" datetime="{{date format='%B %e, %Y'}}">{{date format='time_ago'}}</time>
                 &middot;
-                {{reading_time}} {{L 'min read'}}
+                {{reading_time}} {{L 'min_read'}}
 			</div>
 
 			<div class="entry-excerpt u-h-b-lg">
-				{{excerpt words="15"}}
+				{{excerpt words="50" continue="true"}}
 			</div>
 		</div>
 	</div>
