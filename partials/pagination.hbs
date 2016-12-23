@@ -3,11 +3,11 @@
     {{#pagination}}
         <nav class="pagination-nav clear" role="navigation">
             {{#if previous_page_url}}           
-                <a class="newer-posts btn btn-primary" href="{{previous_page_url}}"><i class="i-back"></i>{{L 'Newer Posts'}}</a>
+                <a class="newer-posts btn btn-primary" href="{{previous_page_url}}"><i class="i-back"></i>{{L 'newer_posts'}}</a>
             {{/if}}
             <span class="page-number">Page {{number current_page}} of {{number total_pages}}</span>
             {{#if next_page_url}}
-            	<a class="older-posts btn btn-primary" href="{{next_page_url}}">{{L 'Older Posts'}}' <i class="i-forward"></i></a>         
+            	<a class="older-posts btn btn-primary" href="{{next_page_url}}">{{L 'older_posts'}} <i class="i-forward"></i></a>         
             {{/if}}       
         </nav>
     {{/pagination}}
