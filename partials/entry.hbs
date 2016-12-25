@@ -19,9 +19,9 @@
 				<i class="i-chat"></i>
 				<a class="entry-comments" href="{{post_url}}#post-comments">
 					{{!-- Disqus Comments Count --}}
-					<span class="disqus-comment-count mapache-disqus" data-disqus-url="{{url absolute="true"}}">0</span>
+					<span class="disqus-comment-count mapache-disqus" data-disqus-url="{{post_url}}">0</span>
 					{{!-- Facebook Comments Counts --}}
-					<span class="fb-comments-count mapache-facebook" data-href="{{url absolute="true"}}">0</span>
+					<span class="fb-comments-count mapache-facebook" data-href="{{post_url}}">0</span>
 					<span>Comments</span>
 				</a>
 				{{#author}}— by <strong><a class="entry-author" href="{{author_url}}">{{name}}</a></strong> —{{/author}}
