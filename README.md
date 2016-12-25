@@ -103,7 +103,7 @@ var title_home = '... your title ...';
 var youtube = {'YOUR_CHANNEL_NAME':'YOUR_CHANNEL_ID'}
 
 /*Disqus for Comments*/
-var disqus_shortname = 'YOUR_DISQUS_SHORTCUT_HERE';
+var disqusShortname = 'YOUR_DISQUS_SHORTCUT_HERE';
 
 </script>
 
