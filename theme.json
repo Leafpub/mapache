@@ -1,7 +1,7 @@
 {
     "name": "Mapache",
     "description": "Fork from Mapache theme for ghost by @GodoFredoNinja",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "requires": "1.0.0",
     "author": "Marc Apfelbaum",
     "license": "GPLv3",
