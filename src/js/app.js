@@ -30,6 +30,7 @@ const $share = $('.share');
 const $shareCount = $('.share-count');
 const $videoFormatBox = $('#video-format');
 const $postBox = $('#post');
+const $reading = $('.reading-indicator');
 
 const $pageUrl = $('body').attr('mapache-page-url');
 
@@ -135,6 +136,28 @@ function videoPostFormat() {
   }
 }
 
+function registerReadingIndicator(){
+    var getMax = function(){
+        return $doc.height() - $win.height();
+    }
+    
+    var getValue = function(){
+        return $win.scrollTop();
+    }
+        
+    // Set the Max attr for the first time
+    $reading.attr({ max: getMax() });
+
+    $doc.on('scroll', function(){
+        // On scroll only Value attr needs to be calculated
+        $reading.attr({ value: getValue() });
+    });
+      
+    $win.resize(function(){
+        // On resize, both Max/Value attr needs to be calculated
+        $reading.attr({ max: getMax(), value: getValue() });
+    });
+}
 
 $win.on('scroll', function () {
   /* Add background Header */
@@ -155,6 +178,8 @@ $doc.on('ready', () => {
 
   /* FollowMe */
   if (typeof followSocialMedia !== 'undefined') Mapache.follow(followSocialMedia, $followBox, urlRegexp); // eslint-disable-line
+
+  if (typeof enableReadingIndicator !== 'undefined') registerReadingIndicator(); // eslint-disable-line
 
   /* Facebook Share Count */
   Mapache.facebookShare($shareCount);
