@@ -24,6 +24,7 @@
 	{{leafpub_head}}
 </head>
 <body class=" {{body_class}}" mapache-page-url="{{url}}">
+<progress class="reading-indicator flat" {{#is @request.homepage}}style="opacity: 0;" {{/is}}  max="0" value="0"></progress>
 {{!-- Header section --}}
 <header id="header" class="header {{#is slug}} toolbar-shadow"{{else}}" style="background:transparent"{{/is}}>
 	<section class="header-wrap u-flex-wrap u-flex-center">

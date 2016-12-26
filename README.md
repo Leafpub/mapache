@@ -28,7 +28,7 @@ Mapache supports the following web [browsers](http://caniuse.com/#search=flexbox
 - Buttons to share the article
 - Counter shared articles on Facebook
 - YouTube, Vimeo, kickstarter -> Video Responsive
-
+- Reading progress indicator
 
 ### Replace Favorite icon
 Create an image icon with these dimensions with the name icon.png `155px * 155px` in ` Copy your new favorite icon to ./assets/img/icon.png`
@@ -75,6 +75,8 @@ var youtube = {'YOUR_CHANNEL_NAME':'YOUR_CHANNEL_ID'}
 /*Disqus for Comments*/
 var disqusShortname = 'YOUR_DISQUS_SHORTCUT_HERE';
 
+/* enable reading indicator */
+var enableReadingIndicator = true;
 </script>
 
 <!-- Disqus Comments Count-->
